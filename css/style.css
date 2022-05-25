@@ -1,0 +1,66 @@
+body{
+    background-color: aquamarine;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: -2px;
+    background-color: #ffffff;
+}
+
+.preta{
+    background-color: #000000;
+}
+
+.cavalo{
+    background-image: url("../imagens/cavalo_branco.png");
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    top: 150px;
+    left: 150px;
+    animation: mov-cavalo 10s infinite;
+}
+
+@keyframes mov-cavalo {
+    0% {top: 150px; left: 150px;}
+    20% {top: 455px; left: 150px;}
+    30% {top: 455px; left: 305px;}
+    40% {top: 755px; left: 305px;}
+    50% {top: 755px; left: 455px;}
+    60% {top: 1060px; left: 455px;}
+    70% {top: 1060px; left: 610px;}
+    80% {top: 1060px; left: 760px;}
+    90% {top: 1210px; left: 760px;}
+    100% {top: 1210px; left: 910px;}
+}
+
+.cavalo2{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    top: 150px;
+    left: 910px;
+    animation: mov-cavalo2 10s infinite;
+}
+
+@keyframes mov-cavalo2 {
+    0% {top: 150px; left: 910px;}
+    20% {top: 450px; left: 910px;}
+    40% {top: 450px; left: 760px;}
+    50% {top: 750px; left: 760px;}
+    60% {top: 750px; left: 600px;}
+    70% {top: 750px; left: 300px;}
+    80% {top: 910px; left: 300px;}
+    90% {top: 1210px; left: 300px;}
+    100% {top: 1210px; left: 150px;}
+}
